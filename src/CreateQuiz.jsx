@@ -8,7 +8,7 @@ export default function CreateQuiz({ onCreated }) {
   const handleGenerate = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:4000/api/quizzes/generate', {
+      const res = await axios.post('https://quiz-frontend-0t3k.onrender.com/api/quizzes/generate', {
         topic,
         count: 10,
       });
